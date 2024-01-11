@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09</title>
+</head>
+<body>
+
+    <h1>Step 09</h1>
+    <a href="./index.html"> Vai a Index</a>
+
+    <script>
+        
+        alert('SELEZIONA UNA BEVANDA');
+
+        let drink = prompt('0 - acqua \n1 - caffé \n2 - spritz \n3 - vinoh');
+
+        while(drink != 0 && drink != 1 && drink != 2 && drink != 3){
+            drink = prompt('Valore inserito non valido! Sei mbrikato? \n0 - acqua \n1 - caffé \n2 - spritz \n3 - vinoh');
+        }
+
+        if(drink == 2 || drink == 3){
+
+            let age = prompt('Bevanda Alcolica! \nInserisci la tua etá per avere la bevanda');
+
+            if(age >= 18){
+                alert('Bevanda erogata, puoi sbronzarti!');
+            }else{
+                alert('Una volante della pula sta arrivando a casa tua!');
+                drink = prompt('Dai, scegli una bevanda analcolica! \n0 - acqua \n1 - caffé');
+
+                if(drink == 0 || drink == 1){
+                    alert('Ecco la bevanda');
+                }else{
+                    alert('allor si scem!');
+                }
+            }
+
+        }else{
+            alert('Ecco la bevanda che fa la ruggine');
+        }
+
+    </script>
+</body>
+</html>
